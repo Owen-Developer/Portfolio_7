@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="https://kit.fontawesome.com/515deb5b82.js" crossorigin="anonymous"></script> <!-- <i class="fa-solid fa-arrow-right"></i> -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Demo 7</title>
+</head>
+<body>
+    <!-- EXTRA -->
+     <div class="menu-modal">
+        <a href="#about" class="modal-link">About</a>
+        <a href="#service" class="modal-link">Services</a>
+        <a href="#project" class="modal-link">Works</a>
+        <a href="#feedback" class="modal-link">Feedback</a>
+     </div>
+    <!----------->
+
+    <div class="header" id="home">
+        <a href="#home" class="header-link">HOMEPAGE</a>
+        <a href="#about" class="header-link">ABOUT</a>
+        <img src="images/logo.png" class="header-logo" />
+        <a href="#project" class="header-link">WORKS</a>
+        <a href="#contact" class="header-link">CONTACT</a>
+        <div class="menu-icon-container" onclick="toggleModal()">
+            <div class="menu-line1"></div>
+            <div class="menu-line2"></div>
+            <div class="menu-line3"></div>
+        </div>
+    </div>
+
+    <div class="home-container" id="home">
+        <div class="home-title starter">Visual Designer<br> Based in Australia</div>
+        <div class="home-para starter">Creativity fuels my work as a designer, allowing me to craft visuals that engage and inspire across various platforms.</div>
+        <a href="#contact"><div class="btn-contact starter">
+            <div class="btn-contact-bg"></div>
+            <div class="btn-contact-txt">Contact Me</div>
+            <div class="contact-arr-wrapper"><i class="fa-solid fa-arrow-right contact-arr"></i></div>
+        </div></a>
+
+        <div class="home-img-flex">
+            <div class="home-img-container starter">
+                <div class="home-img-content">
+                    <div class="img-content-head">Mobile Application</div>
+                    <a href="#contact"><div class="img-arr-wrapper">
+                        <div class="learn-wrapper">Learn more</div>
+                        <i class="fa-solid fa-arrow-right img-arr"></i>
+                    </div></a>
+                </div>
+
+                <img src="images/home_imgs/h71_1.png" style="opacity: 1;" class="home-img" />
+                <img src="images/home_imgs/h71_2.png" class="home-img" />
+                <img src="images/home_imgs/h71_3.png" class="home-img" />
+            </div>
+
+            <div class="home-img-container starter">
+                <div class="home-img-content">
+                    <div class="img-content-head">Mockup Design</div>
+                    <a href="#contact"><div class="img-arr-wrapper">
+                        <div class="learn-wrapper">Learn more</div>
+                        <i class="fa-solid fa-arrow-right img-arr"></i>
+                    </div></a>
+                </div>
+
+                <img src="images/home_imgs/h72_2.png" style="opacity: 1;" class="home-img" />
+                <img src="images/home_imgs/h72_1.png" class="home-img" />
+                <img src="images/home_imgs/h72_3.png" class="home-img" />
+            </div>
+        </div>
+    </div>
+
+    <div class="about-container" id="about">
+        <div class="about-col">
+            <div class="about-head scroll-target">ABOUT ME</div>
+            <img src="images/about_avatar.png" class="about-img scroll-target" />
+        </div>
+        <div class="about-para scroll-target">Hi I’m Augustus and I am passionate about everything that has to do with Digital Design and Art Direction. I enjoy working with agencies and enthusiastic people who want to solve problems through beautiful designs and experiences.</div>
+    </div>
+
+    <div class="work-container" id="service">
+        <div class="what-head scroll-target">WHAT I'M DOING</div>
+        <div class="what-box scroll-target">
+            <div class="what-img-container">
+                <img src="images/what_imgs/w7_1.png" class="what-img" />
+            </div>
+            <div class="cross-container">
+                <div class="what-cross">
+                    <div class="cross-txt">FIGMA | PREMIERE PRO | PHOTOSHOP</div>
+                </div>
+            </div>
+            <div class="what-txt">MOCKUP DESIGN</div>
+        </div>
+        <div class="what-box scroll-target">
+            <div class="cross-container">
+                <div class="what-cross">
+                    <div class="cross-txt">LOGO DESIGN | TYPOGRAPHY | ADOBE</div>
+                </div>
+            </div>
+            <div class="what-txt">BRANDING DESIGN</div>
+            <div class="what-img-container">
+                <img src="images/what_imgs/w7_2.png" class="what-img" />
+            </div>
+        </div>
+        <div class="what-box scroll-target">
+            <div class="what-img-container">
+                <img src="images/what_imgs/w7_3.png" class="what-img" />
+            </div>
+            <div class="cross-container">
+                <div class="what-cross">
+                    <div class="cross-txt">U.R | PROTOTYPING | WIREFRAMING</div>
+                </div>
+            </div>
+            <div class="what-txt">UI/UX DESIGN</div>
+        </div>
+        <div class="what-box scroll-target">
+            <div class="cross-container">
+                <div class="what-cross">
+                    <div class="cross-txt">HTML | CSS | JAVASCRIPT | REACT</div>
+                </div>
+            </div>
+            <div class="what-txt">DEVELOPMENT</div>
+            <div class="what-img-container">
+                <img src="images/what_imgs/w7_4.png" class="what-img" />
+            </div>
+        </div>
+
+
+        <div class="proj-container" id="project">
+            <div class="proj-content-flex scroll-target">
+                <div class="proj-head">SELECTED PROJECT</div>
+                <div class="proj-nav-flex">
+                    <div class="proj-btn" onclick="moveProject('left')"><i class="fa-solid fa-chevron-left proj-chev"></i></div>
+                    <div class="proj-btn" onclick="moveProject('right')"><i class="fa-solid fa-chevron-right proj-chev"></i></div>
+                </div>
+            </div>
+    
+            <div class="proj-img-container scroll-target">
+                <div class="proj-img-holder" style="left: 0px;">
+                <div class="proj-content-container">
+
+                    <div class="proj-num-txt">0<span id="projNum">1</span>/04</div>
+                    <div class="proj-type">
+                        <div class="type-head">TYPE</div>
+                        <div class="type-txt">iPhone Mockup</div>
+                        <div class="type-txt">UI Design</div>
+                    <div class="type-txt">Typography</div>
+                </div>
+                <div class="proj-arr-wrapper"><i class="fa-solid fa-arrow-right proj-arr"></i></div>
+                    </div>
+                <img src="images/projects/p7_1.png" class="proj-img" />
+            </div>
+                <div class="proj-img-holder">
+                    <div class="proj-content-container">
+                        <div class="proj-num-txt">0<span id="projNum">2</span>/04</div>
+                        <div class="proj-type">
+                            <div class="type-head">TYPE</div>
+                            <div class="type-txt">Shopping app</div>
+                            <div class="type-txt">Mobile App</div>
+                            <div class="type-txt">Web Design</div>
+                        </div>
+                        <div class="proj-arr-wrapper"><i class="fa-solid fa-arrow-right proj-arr"></i></div>
+                    </div>
+                <img src="images/projects/p7_2.png" class="proj-img" />
+            </div>
+                <div class="proj-img-holder">
+                    <div class="proj-content-container">
+                    <div class="proj-num-txt">0<span id="projNum">3</span>/04</div>
+                <div class="proj-type">
+                    <div class="type-head">TYPE</div>
+                    <div class="type-txt">Sports App</div>
+                    <div class="type-txt">Logo Design</div>
+                    <div class="type-txt">Responsive</div>
+                </div>
+                <div class="proj-arr-wrapper"><i class="fa-solid fa-arrow-right proj-arr"></i></div>
+                </div>
+                <img src="images/projects/p7_3.png" class="proj-img" />
+            </div>
+                <div class="proj-img-holder">
+                    <div class="proj-content-container">
+
+                        <div class="proj-num-txt">0<span id="projNum">4</span>/04</div>
+                        <div class="proj-type">
+                            <div class="type-head">TYPE</div>
+                            <div class="type-txt">Payment App</div>
+                            <div class="type-txt">Mobile App</div>
+                            <div class="type-txt">UI Design</div>
+                        </div>
+                        <div class="proj-arr-wrapper"><i class="fa-solid fa-arrow-right proj-arr"></i></div>
+                    </div>
+                <img src="images/projects/p7_4.png" class="proj-img" />
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="client-container" id="client">
+        <div class="client-head scroll-target">PAST CLIENT</div>
+
+        <div class="client-box">
+            <div class="client-idx scroll-target">01</div>
+            <div class="client-img-container">
+                <img src="images/projects/p7_1.png" class="client-img" />
+            </div>
+            <div class="client-col">
+                <img src="images/clients/c7_1.png" class="client-logo scroll-target" />
+                <div class="client-para scroll-target">Through our community practice, helping one of the world’s leading technology companies advise and mentor for an ongoing global initiative that spotlights inspirational YouTube creators.</div>
+            </div>
+        </div>
+        <div class="client-box">
+            <div class="client-idx scroll-target">02</div>
+            <div class="client-img-container">
+                <img src="images/projects/p7_2.png" class="client-img" />
+            </div>
+            <div class="client-col">
+                <img src="images/clients/c7_2.png" class="client-logo scroll-target" />
+                <div class="client-para scroll-target">Through our community practice, helping one of the world’s leading technology companies advise and mentor for an ongoing global initiative that spotlights inspirational YouTube creators.</div>
+            </div>
+        </div>
+        <div class="client-box">
+            <div class="client-idx scroll-target">03</div>
+            <div class="client-img-container">
+                <img src="images/projects/p7_3.png" class="client-img" />
+            </div>
+            <div class="client-col">
+                <img src="images/clients/c7_3.png" class="client-logo scroll-target" />
+                <div class="client-para scroll-target">Through our community practice, helping one of the world’s leading technology companies advise and mentor for an ongoing global initiative that spotlights inspirational YouTube creators.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="test-container" id="feedback">
+        <div class="test-content-flex scroll-target">
+            <div class="test-title">FEEDBACK</div>
+            <div class="test-nav">
+                <div class="btn-test" onclick="switchReview('left')"><div class="test-arr-container"><i class="fa-solid fa-arrow-left-long test-arr"></i></div></div>
+                <div class="btn-test" onclick="switchReview('right')"><div class="test-arr-container"><i class="fa-solid fa-arrow-right-long test-arr"></i></div></div>
+            </div>
+        </div>
+
+        <div class="rev-container scroll-target">
+            <div class="rev-wrapper">
+                <div class="rev-para">"Aaron is an exceptional mobile web designer who consistently delivers high-quality results. His work is a perfect blend of creativity and functionality. His designs are intuitive and user-friendly, ensuring seamless navigation for all users, regardless of the device he uses."</div>
+            
+                <div class="rev-content-flex">
+                    <img src="images/avatars/avatar-1.png" class="rev-avatar" />
+                    <div class="rev-info-col">
+                        <div class="rev-name">Ethan Gallagher</div>
+                        <div class="rev-job">Product Designer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rev-wrapper">
+                <div class="rev-para">"Working with Aaron was an absolute pleasure. He demonstrated remarkable professionalism and a genuine passion for his craft. His attention to detail and commitment to excellence were evident in every project we collaborated on, setting him apart in the field."</div>
+            
+                <div class="rev-content-flex">
+                    <img src="images/avatars/avatar-2.png" class="rev-avatar" />
+                    <div class="rev-info-col">
+                        <div class="rev-name">Sophia Callahan</div>
+                        <div class="rev-job">UI/UX Designer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rev-wrapper">
+                <div class="rev-para">"Aaron's technical skills are truly impressive. He has a deep understanding of responsive design principles and modern web technologies. His ability to adapt to new tools and trends made him an invaluable asset to our team, consistently meeting our clients' needs."</div>
+            
+                <div class="rev-content-flex">
+                    <img src="images/avatars/avatar-3.png" class="rev-avatar" />
+                    <div class="rev-info-col">
+                        <div class="rev-name">Lucas McAllister</div>
+                        <div class="rev-job">DevOps Engineer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rev-wrapper">
+                <div class="rev-para">"One of Aaron’s standout qualities is his communication skills. He is always approachable, open to feedback, and willing to share his knowledge. This made collaboration effortless and fostered a positive working environment for the entire team."</div>
+            
+                <div class="rev-content-flex">
+                    <img src="images/avatars/avatar-4.png" class="rev-avatar" />
+                    <div class="rev-info-col">
+                        <div class="rev-name">Isabella Prescott</div>
+                        <div class="rev-job">Founder @ OneText</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rev-wrapper">
+                <div class="rev-para">"Beyond his technical expertise, Aaron is a fantastic team player. He consistently supported his colleagues, sharing insights and offering assistance whenever needed. His collaborative spirit inspired everyone to strive for excellence."</div>
+            
+                <div class="rev-content-flex">
+                    <img src="images/avatars/avatar-5.png" class="rev-avatar" />
+                    <div class="rev-info-col">
+                        <div class="rev-name">Nathaniel Torres</div>
+                        <div class="rev-job">Web Developer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rev-wrapper">
+                <div class="rev-para">"If given the chance, I would gladly work with Aaron again. His contributions were instrumental to our team's success, and his positive attitude made the workplace better for everyone involved. Aaron truly exemplifies what it means to be a top-tier professional."</div>
+            
+                <div class="rev-content-flex">
+                    <img src="images/avatars/avatar-6.png" class="rev-avatar" />
+                    <div class="rev-info-col">
+                        <div class="rev-name">Olivia Delaney</div>
+                        <div class="rev-job">Product Designer</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-container" id="contact">
+        <div class="footer-title scroll-target">Have a Cool<br> Project?</div>
+        <div class="footer-btn scroll-target">
+            <div class="btn-contact-bg"></div>
+            <div class="btn-contact-txt">Contact Me</div>
+            <div class="contact-arr-wrapper"><i class="fa-solid fa-arrow-right contact-arr"></i></div>
+        </div>
+
+        <div class="footer-flex scroll-target">
+            <div class="footer-content-col">
+                <img src="images/about_avatar.png" class="footer-img" />
+                <div class="footer-content-txt">Visual Designer Based in Australia</div>
+            </div>
+
+            <div class="footer-nav-flex">
+                <div class="footer-nav-col">
+                    <div class="footer-nav-head">Navigation</div>
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#service" class="footer-link">Services</a>
+                    <a href="#work" class="footer-link">Works</a>
+                </div>
+                <div class="footer-nav-col">
+                    <div class="footer-nav-head">Services</div>
+                    <a href="#service" class="footer-link">Mockup</a>
+                    <a href="#service" class="footer-link">Branding</a>
+                    <a href="#service" class="footer-link">UI Design</a>
+                    <a href="#service" class="footer-link">Development</a>
+                </div>
+                <div class="footer-nav-col">
+                    <div class="footer-nav-head">Social Media</div>
+                    <a href="https://dribbble.com" class="footer-link">Dribbble</a>
+                    <a href="https://twitter.com" class="footer-link">Twitter</a>
+                    <a href="https://instagram.com" class="footer-link">Instagram</a>
+                    <a href="https://linkedin.com" class="footer-link">Linkedin</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">2025 | William</div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
